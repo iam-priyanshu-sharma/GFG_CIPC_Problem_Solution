@@ -28,7 +28,7 @@ class Main {
         System.out.print ("Enter number of test cases you want to perform: ");
         int t = scanner.nextInt ();
         scanner.nextLine ();
-        
+
         while (t-- > 0) {
             System.out.print ("Enter a string: ");
             String s = scanner.nextLine ();
