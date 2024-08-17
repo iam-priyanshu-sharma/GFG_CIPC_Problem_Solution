@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class GFG {
+class Main {
     public static boolean isPalin (String s) {
         s = s.replaceAll ("\\s", "").toLowerCase ();
 

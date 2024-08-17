@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class Driver {
+class Main {
     public static void main (String[] args) throws IOException {
         BufferedReader read = new BufferedReader (new InputStreamReader (System.in));
         System.out.print ("Enter number of test cases you want to perform: ");
