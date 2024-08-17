@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+class Main {
+
+    public static void changeCase (String s) {
+        System.out.println (s.substring (0, 1).toUpperCase () + s.substring (1));
+        System.out.println (s.toUpperCase ());
+    }
+
+
+    public static void main (String[] args) throws IOException {
+        BufferedReader read = new BufferedReader (new InputStreamReader (System.in));
+        System.out.print ("Enter number of test cases you want to perform: ");
+        int t = Integer.parseInt (read.readLine ());
+
+        while (t-- > 0) {
+            System.out.print ("Enter a string: ");
+            String s = read.readLine ().trim ();
+            changeCase (s);
+        }
+    }
+}
