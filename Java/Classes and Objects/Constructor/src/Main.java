@@ -13,7 +13,7 @@ class Main {
         Scanner ob = new Scanner (System.in);
         System.out.print ("Enter number of test cases you want to perform: ");
         int t = ob.nextInt ();
-        
+
         while (t-- > 0) {
             User user = new User ();
             System.out.println (user.name);
