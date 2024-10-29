@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 class Main {
-
-    public static void invTriangleWall (int s) {
-        for (int i = s; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print ("* ");
+    public static void squareWall (int s) {
+        for (int i = 1; i <= s * s; i++) {
+            System.out.print ("* ");
+            if ( i % s == 0 ) {
+                System.out.println ();
             }
-            System.out.println ();
         }
     }
 
@@ -19,7 +18,7 @@ class Main {
         while (t-- > 0) {
             System.out.print ("Enter value of s: ");
             int s = scanner.nextInt ();
-            invTriangleWall (s);
+            squareWall (s);
         }
         scanner.close ();
     }

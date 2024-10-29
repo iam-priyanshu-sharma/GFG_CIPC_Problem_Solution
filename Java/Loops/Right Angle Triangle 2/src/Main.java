@@ -24,7 +24,6 @@ class Main {
             System.out.print ("Enter value of s: ");
             int s = scanner.nextInt ();
             triangle (s);
-            System.out.println ("~");
         }
         scanner.close ();
     }
