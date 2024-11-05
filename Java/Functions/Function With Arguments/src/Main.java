@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 class Main {
 
-    static void helloFunction () {
-        System.out.print ("Hello");
+    static void argumentFunction (int a, int b) {
+        System.out.println (a + b);
     }
 
     public static void main (String[] args) {
@@ -12,7 +12,10 @@ class Main {
         int t = scanner.nextInt ();
 
         while (t-- > 0) {
-            helloFunction ();
+            System.out.print ("Enter two numbers: ");
+            int a = scanner.nextInt ();
+            int b = scanner.nextInt ();
+            argumentFunction (a, b);
         }
         scanner.close ();
     }
